@@ -1,0 +1,206 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header h1 {
+    font-size: 5rem; 
+    font-weight: bold;
+}
+
+header {
+    padding: 160px 16px; 
+}
+
+.sidebar {
+    width: 40%;
+    height: 100vh;
+    background-color: #024959;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.bgimg {
+    width: 100%;
+    height: 100%;
+    background: url('water.jpg') center/cover no-repeat;
+}
+
+.sidebar-hidden {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100vh;
+    background-color: #024959;
+    transition: 0.3s;
+    z-index: 1000;
+    padding-top: 100px;
+}
+
+.sidebar-hidden.active {
+    right: 0;
+}
+
+.sidebar-menu a {
+    display: block;
+    padding: 15px;
+    color: #A0E3E2;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar-menu a:hover {
+    background-color: #026873;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: #A0E3E2;
+    cursor: pointer;
+}
+
+.main-content {
+    margin-left: 40%;
+    padding: 20px;
+}
+
+.menu-btn {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+    color: #024959;
+    cursor: pointer;
+}
+
+.header-section {
+    text-align: center;
+    padding: 100px 20px;
+    color: #024959;
+}
+
+.download-btn {
+    padding: 12px 20px;
+    background-color: transparent;
+    border: 2px solid #024959;
+    color: #024959;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #024959;
+    color: white;
+}
+
+.about-section {
+    padding: 20px;
+    color: #024959;
+}
+
+.contact-section {
+    padding: 32px;
+    max-width: 900px;
+    margin: auto;
+    color: #024959;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 250px;
+    font-size: 18px;
+}
+
+.contact-image {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    background: white;
+    color: #024959;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #026873;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #d6eceb;
+    color: #024959;
+}
+
+.send-button {
+    width: 100%;
+    padding: 12px;
+    background: #026873;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.send-button:hover {
+    background: #02A6A6;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+    padding: 20px 0;
+    background-color: #024959;
+    color: white;
+    width: 100%;
+    position: relative; 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap; 
+    width: 100%;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #A0E3E2;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #02A6A6;
+}
