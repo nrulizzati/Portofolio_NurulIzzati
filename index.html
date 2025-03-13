@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar with image -->
+    <nav class="sidebar">
+        <div class="bgimg"></div>
+    </nav>
+
+    <!-- Hidden Sidebar -->
+    <nav class="sidebar-hidden" id="mySidebar">
+        <a href="javascript:void(0)" onclick="closeNav()" class="close-btn">
+            <i class="fa fa-remove"></i>
+        </a>
+        <div class="sidebar-menu">
+            <a href="#" onclick="closeNav()">Home</a>
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="#contact" onclick="closeNav()">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="main-content">
+        <span class="menu-btn" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+        </span>
+
+        <!-- Header -->
+        <header class="header-section" id="home">
+            <h1><b>Nurul Izzati</b></h1>
+            <p>Informatics Student at USK University</p>
+            <button class="download-btn">
+                <i class="fa fa-download"></i> Download Resume
+            </button>
+        </header>
+
+        <!-- About Section -->
+        <div class="about-section" id="about">
+            <h2>About</h2>
+            <hr>
+            <p>Saya adalah seorang mahasiswa informatika yang suka ngulik teknologi, mulai dari coding, sistem, sampai inovasi yang bisa bikin perubahan. Saya selalu penasaran dengan cara kerja sesuatu dan gimana teknologi bisa jadi solusi buat masalah di dunia nyata. Bagi saya, belajar bukan cuma soal teori, tapi juga eksplorasi dan eksperimen buat bikin sesuatu yang benar-benar berguna.</p>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section" id="contact">
+            <h2>Contact Me</h2>
+            <hr>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>Aceh, Indonesia</p>
+                    <p>Phone: +6282363722410</p>
+                    <p>Email: nrulizzti03@gmail.com</p>
+                </div>
+
+                <div class="contact-image">
+                    <img src="side.jpg" alt="Contact Image">
+                </div>
+
+                <div class="contact-form">
+                    <h2>Lets get in touch. Send me a message:</h2>
+                    <hr>
+
+                    <form action="#" method="post">
+                        <input class="input-field" type="text" placeholder="Name" required>
+                        <input class="input-field" type="email" placeholder="Email" required>
+                        <input class="input-field" type="text" placeholder="Subject" required>
+                        <textarea class="input-field" placeholder="Message" required></textarea>
+                        <button class="send-button">✈ SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer-container">
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-snapchat"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
